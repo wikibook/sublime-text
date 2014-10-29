@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="ie10-viewport-bug-workaround.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <title>서브라임 텍스트 단축키</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="margin-bottom: 10px;">
+                    <h1>서브라임 텍스트 단축키</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" id="doc-col-1"></div>
+                <div class="col-md-6" id="doc-col-2"></div>
+            </div>
+        </div>
+
+        <script src="shortcuts.js"></script>
+        <script src="gen.js"></script>
+        <script>
+            var $docCol1 = $("#doc-col-1");
+            makeTable(shortcuts[0], $docCol1);
+            makeTable(shortcuts[1], $docCol1);
+            makeTable(shortcuts[2], $docCol1);
+            var $docCol2 = $("#doc-col-2");
+            makeTable(shortcuts[3], $docCol2);
+            makeTable(shortcuts[4], $docCol2);
+            makeTable(shortcuts[5], $docCol2);
+            makeTable(shortcuts[6], $docCol2);
+            makeTable(shortcuts[7], $docCol2);
+            makeTable(shortcuts[8], $docCol2);
+            colNames($docCol2);
+            var $pageSrc = $("<p>");
+            $pageSrc.addClass("text-right");
+            $pageSrc.html(
+                "출처: " +
+                "<a href=\"http://wikibook.co.kr/article/sublime-text-shortcuts-1\">서브라임 텍스트 단축키 (1)</a><br>" +
+                "<a href=\"http://wikibook.co.kr/article/sublime-text-shortcuts-2\">서브라임 텍스트 단축키 (2)</a>"
+            );
+            $docCol2.append($pageSrc);
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
