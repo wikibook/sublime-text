@@ -199,7 +199,7 @@ var shortcuts = [
             },
             {
                 "desc": "이동 선택",
-                "osx": "Ctrl + Shift + Left/Right",
+                "osx": "Ctrl(Opt) + Shift + Left/Right",
                 "windows": "Ctrl + Shift + Left/Right"
             },
             {
